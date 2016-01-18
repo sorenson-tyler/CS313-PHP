@@ -28,7 +28,7 @@ function parse2(text) {
 
 }
 
-function parse3(text) {
+function parse3() {
 	document.getElementById("accompDetail").innerHTML = 'Here is a link to my resume';
 	document.getElementById("ES").src = 'Homepage Sources/Sorenson, Tyler, Resume.docx';
 
