@@ -20,11 +20,15 @@ function loadDoc(file, type){
 function parse1(text) {
 	document.getElementById("accomp1Detail").innerHTML = text;
 	document.getElementById("accomp2Detail").innerHTML = "";
-	document.getElementById("ES").style.visibility = visible;
+	document.getElementById("ES").style.visibility = 'visible';
+	document.getElementById("NG").style.visibility = 'hidden';
+
 }
 
 function parse2(text) {
 	document.getElementById("accomp1Detail").innerHTML = "";
 	document.getElementById("accomp2Detail").innerHTML = text;
-	document.getElementById("NG").style.visibility = visible;
+	document.getElementById("NG").style.visibility = 'visible';
+	document.getElementById("ES").style.visibility = 'hidden';
+
 }
