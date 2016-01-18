@@ -37,6 +37,10 @@ body {
     position: fixed;
 }
 
+a {
+	text-decoration: none;
+}
+
 #navigation ul {
     display: table-row;
 }
@@ -110,7 +114,7 @@ body {
 
 #accompTitles li {
 	display: table-cell;
-	padding: 10px;
+	padding: 20px;
 	text-align: center;
 }
 

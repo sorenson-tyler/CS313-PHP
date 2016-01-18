@@ -19,13 +19,13 @@ function loadDoc(file, type){
 function parse1(text) {
 	document.getElementById("accompDetail").innerHTML = text;
 	document.getElementById("ES").src = 'Homepage Sources/EagleScout.jpg';
+	document.getElementById("ES").style.zoom = "80%";
 
 }
 
 function parse2(text) {
 	document.getElementById("accompDetail").innerHTML = text;
 	document.getElementById("ES").src = 'Homepage Sources/NAVEXGlobal.jpg';
-
 }
 
 function parse3() {
