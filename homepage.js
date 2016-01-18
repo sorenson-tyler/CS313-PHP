@@ -3,8 +3,14 @@ function loadDoc(file, type){
 	console.log(file + " where is it");
 	xhttp.onreadystatechange = function() {
 		if (xhttp.readyState == 4 && xhttp.status == 200) {
-			document.getElementById("accomp1Detail").innerHTML = xhttp.responseText;
-			//parse1(xhttp.responseText);
+			switch (type) {
+				case 1:
+					parse1(xhttp.responseText);
+					break;
+				case 2:
+					parse2(xhttp.responseText);
+					break;
+			}
 		}
   	};
   	xhttp.open("GET", file, true);
@@ -13,8 +19,10 @@ function loadDoc(file, type){
 
 function parse1(text) {
 	document.getElementById("accomp1Detail").innerHTML = text;
+	document.getElementById("ES").visibility = visible;
 }
 
 function parse2(text) {
 	document.getElementById("accomp2Detail").innerHTML = text;
+		document.getElementById("NG").visibility = visible;
 }
