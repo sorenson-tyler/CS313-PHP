@@ -19,10 +19,12 @@ function loadDoc(file, type){
 
 function parse1(text) {
 	document.getElementById("accomp1Detail").innerHTML = text;
-	document.getElementById("ES").visibility = visible;
+	document.getElementById("accomp2Detail").innerHTML = "";
+	document.getElementById("ES").style.visibility = visible;
 }
 
 function parse2(text) {
+	document.getElementById("accomp1Detail").innerHTML = "";
 	document.getElementById("accomp2Detail").innerHTML = text;
-		document.getElementById("NG").visibility = visible;
+	document.getElementById("NG").style.visibility = visible;
 }
