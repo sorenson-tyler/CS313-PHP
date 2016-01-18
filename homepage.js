@@ -18,17 +18,13 @@ function loadDoc(file, type){
 }
 
 function parse1(text) {
-	document.getElementById("accomp1Detail").innerHTML = text;
-	document.getElementById("accomp2Detail").innerHTML = "";
-	document.getElementById("ES").style.visibility = 'visible';
-	document.getElementById("NG").style.visibility = 'hidden';
+	document.getElementById("accompDetail").innerHTML = text;
+	document.getElementById("ES").src = 'Homepage Sources/EagleScout.jpg';
 
 }
 
 function parse2(text) {
-	document.getElementById("accomp1Detail").innerHTML = "";
-	document.getElementById("accomp2Detail").innerHTML = text;
-	document.getElementById("NG").style.visibility = 'visible';
-	document.getElementById("ES").style.visibility = 'hidden';
+	document.getElementById("accompDetail").innerHTML = text;
+	document.getElementById("ES").src = 'Homepage Sources/NAVEXGlobal.jpg';
 
 }
