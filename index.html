@@ -5,22 +5,45 @@
         <title>Tyler Sorenson's Homepage</title>
         <link rel="stylesheet" type="text/css" href="homepage.css"/>
         <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="homepage.js"></script>
     </head>
-    <body>
+    <body onload="loadDoc('Homepage Sources\accomp1Description.txt', 1)">
         <div id="header">
             <h1 id="name">Tyler Sorenson</h1>
             <nav id="navigation">
                 <ul>
-                    <li><a>Projects</a></li>
+                    <li><a href="projects.html">Projects</a></li>
                     <li><a href="https://www.byui.edu">BYU - Idaho</a></li>
-                    <li><a>About</a></li>
+                    <li><a href="index.html">About</a></li>
                 </ul>
             </nav>
         </div>
-        <img id="scrolling" src="Homepage Sources\Wedding.jpg" alt="Wedding"/>
-        <div id="about">
-            <h1 id="aboutTitle"></h1>
-            <p id="about"></p>
+        <div id="wedding">
+            <img id="scrolling" src="Homepage Sources\Wedding.jpg" alt="Wedding"/>
+            <div id="about">
+                <h1 id="aboutTitle">My name is Tyler Sorenson</h1>
+                <p id="aboutDetail">I am a Software Engineering student here at Brigham Young University - Idaho. I grew up in the city of Temecula, in Southern California. I met my wife Mkaul Filley here at school and we were married in June 2014. I love what I do here at school and love getting better at it everyday.</p>
+            </div>
+        </div>
+        <div id="accomplishments">
+            <nav id="horizontalLinks">
+                <ul id="accompTitles">
+                    <li id="accomp1"><h1><u><a>Eagle Scout</a></u></h1></li>
+                    <li id="accomp2"><h1><u><a>Current Company</a></u></h1></li>
+                    <li id="accomp3"><h1><u><a>Resumé</a></u></h1></li>
+                </ul>
+            </nav>
+            <div id="accomp1">
+                <img src="Homepage Sources\EagleScout.jpg"/>
+                <p id="accomp1Detail"></p>
+            </div>
+            <div id="accomp2">
+                <img src="Homepage Sources\NAVEXGlobal.jpg"/>
+                <p id="accomp2Detail"></p>
+            </div>
+            <div id="accomp3>"
+                <p id="accomp3Detail"></p>
+            </div>
         </div>
     </body>
 </html>

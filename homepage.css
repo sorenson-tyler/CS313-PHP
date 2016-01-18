@@ -1,5 +1,7 @@
 html {
     font-family:'Open Sans Condensed', Helvetica, Arial, Sans-Serif;
+    margin: 0;
+	padding: 0;
 }
 
 body {
@@ -18,15 +20,16 @@ body {
 }
 
 #name {
+	position: fixed;
 	margin-top: 0px;
 	margin-left: 15px;
 	display: inline;
-	position: fixed;
 	padding: 0px;
 	top: 10px;
 }
 
 #navigation {
+	position: fixed;
 	right: 0px;
 	display: inline-table;
 	height: 20px;
@@ -46,8 +49,71 @@ body {
     padding: 10px;
 }
 
-#scrolling {
-	padding: 0px;
+#wedding {
 	width: 100%;
-	height: = auto;
+	margin: 0;
+	padding: 0;
+	top: 60px;
+	display: inline-block;
+}
+
+#scrolling {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: auto;
+}
+
+#about {
+	outline: none;
+	height: 100px;
+	margin: 0px;
+	display: inline-block;
+	background: grey;
+	color: white;
+	padding: 30px;
+}
+
+#about h1 {
+	font-size: 40px;
+}
+
+#about p {
+	font-size: 20px;
+}
+
+#aboutTitle {
+	margin: 0;
+	padding: 0;
+}
+
+#aboutDetail {
+	margin: 0;
+	padding: 0;
+}
+
+#accomplishments {
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+#horizontalLinks {
+	display: inline-table;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+#accompTitles {
+	display: table-row;
+}
+
+#accompTitles li {
+	display: table-cell;
+	padding: 10px;
+	text-align: center;
+}
+
+#message {
+	padding: 100px;
 }
