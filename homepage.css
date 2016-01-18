@@ -1,0 +1,53 @@
+html {
+    font-family:'Open Sans Condensed', Helvetica, Arial, Sans-Serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#header {
+    box-shadow: 0px 3px 5px #888888;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    position: fixed;
+    height: 60px;
+    background: white;
+}
+
+#name {
+	margin-top: 0px;
+	margin-left: 15px;
+	display: inline;
+	position: fixed;
+	padding: 0px;
+	top: 10px;
+}
+
+#navigation {
+	right: 0px;
+	display: inline-table;
+	height: 20px;
+	width: 30%;
+    position: fixed;
+}
+
+#navigation ul {
+    display: table-row;
+}
+
+#navigation li {
+	font-size: 20px;
+	display: table-cell;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+
+#scrolling {
+	padding: 0px;
+	width: 100%;
+	height: = auto;
+}
