@@ -1,6 +1,5 @@
 function loadDoc(file, type){
 	var xhttp = new XMLHttpRequest();
-	console.log(file + " where is it");
 	xhttp.onreadystatechange = function() {
 		if (xhttp.readyState == 4 && xhttp.status == 200) {
 			switch (type) {
