@@ -19,7 +19,7 @@ function loadDoc(file, type){
 function parse1(text) {
 	document.getElementById("accompDetail").innerHTML = text;
 	document.getElementById("ES").src = 'Homepage Sources/EagleScout.jpg';
-	document.getElementById("ES").style.zoom = "80%";
+	document.getElementById("ES").style.width = "40%";
 
 }
 
@@ -32,4 +32,5 @@ function parse3() {
 	document.getElementById("accompDetail").innerHTML = 'Here is a link to my resume';
 	document.getElementById("ES").src = 'Homepage Sources/Document.jpg';
 	document.getElementById("ImgLink").href = 'Homepage Sources/Sorenson, Tyler, Resume.docx'
+	document.getElementById("ES").style.width = "40%";
 }
