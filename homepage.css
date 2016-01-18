@@ -117,3 +117,9 @@ body {
 #message {
 	padding: 100px;
 }
+
+#ES {
+	width: 100px;
+	height: auto;
+	margin-left: 15%;
+}

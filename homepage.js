@@ -30,6 +30,6 @@ function parse2(text) {
 
 function parse3() {
 	document.getElementById("accompDetail").innerHTML = 'Here is a link to my resume';
-	document.getElementById("ES").src = 'Homepage Sources/Sorenson, Tyler, Resume.docx';
-
+	document.getElementById("ES").src = 'Homepage Sources/Document.jpg';
+	document.getElementById("ImgLink").href = 'Homepage Sources/Sorenson, Tyler, Resume.docx'
 }
