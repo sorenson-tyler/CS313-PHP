@@ -4,13 +4,14 @@
 <!DOCTYPE html>
 <html>
     <body>
+        Thank you for your response 
         <?php
-            // Set session variables
             $_SESSION["firstname"] = $_POST["first_name"];
             $_SESSION["lastname"] = $_POST["last_name"];
+            $value = $_POST["car_model"];
+            include 'results.php';
+        echo $_SESSION["firstname"];
+        echo $value;
         ?>
-        <h1>Your name is 
-            <?php echo $_SESSION['firstname'];?>
-        </h1>
     </body>
 </html>
