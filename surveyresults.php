@@ -50,6 +50,7 @@
             }
             
             echo $Grey;
+            echo $Black;
         ?>
         </h3>
     </body>
