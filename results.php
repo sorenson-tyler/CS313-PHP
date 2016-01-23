@@ -15,7 +15,7 @@
     $Minivan = '0';
     $Truck = '0';
     $SUV = '0';
-    $Sports car = '0';
+    $Sportscar = '0';
 
     //Color
     $Red = '0';
