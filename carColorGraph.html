@@ -94,7 +94,7 @@
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function() {
               if (xhttp.readyState == 4 && xhttp.status == 200) {
-                  var text = xhtttp.responseText;
+                  var text = xhttp.responseText;
                   if(text.indexOf(item) > -1) {
                       var result = text.split(item);
                       if (result.length > 1) {
