@@ -49,7 +49,7 @@
                     $Other++;
             }
             
-            echo $color;
+            echo $Grey;
         ?>
         </h3>
     </body>
