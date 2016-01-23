@@ -13,7 +13,7 @@
         <link rel="stylesheet" type="text/css" href="homepage.css"/>
         <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
     </head>
-    <body onload="loadDoc('Homepage Sources/accomp1Description.txt', 1)">
+    <body>
         <div id="header">
             <h1 id="name">Tyler Sorenson</h1>
             <nav id="navigation">
@@ -68,7 +68,7 @@
                 <input type="radio" name="car_color" value="Grey">Grey<br>
                 <input type="radio" name="car_color" value="Other">Other<br>
             </div>
-            <button type="submit">Submit response</button>
+            <input type="submit">
         </form>
     </body>
 </html>
