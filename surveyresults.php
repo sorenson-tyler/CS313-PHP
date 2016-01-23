@@ -8,6 +8,7 @@
     <head>
         <link rel="stylesheet" type="text/css" href="survey.css"/>
         <link rel="stylesheet" type="text/css" href="homepage.css"/>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <div id="header">
