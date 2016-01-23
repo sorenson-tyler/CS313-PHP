@@ -27,8 +27,29 @@
             $color = $_POST["car_color"];
             $model = $_POST["car_model"];
             $type = $_POST["car_type"];
+            
             echo $_SESSION["firstname"];
             echo ", you drive a $color $model $type.";
+            
+            switch ($color)
+            {
+                case 'Red':
+                    $Red++;
+                case 'Blue':
+                    $Blue++;
+                case 'Green':
+                    $Green++;
+                case 'Black':
+                    $Black++;
+                case 'White':
+                    $White++;
+                case 'Grey':
+                    $Grey++;
+                case 'Other':
+                    $Other++;
+            }
+            
+            echo $color;
         ?>
         </h3>
     </body>
