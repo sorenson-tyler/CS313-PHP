@@ -8,13 +8,13 @@
     fwrite($file, "\n");
     fclose($file);
     
-    $file = fopen("resultsColor.txt", "a") or die ("can't open file");
+    $file = fopen("resultsModel.txt", "a") or die ("can't open file");
     $model = $_POST["car_model"];
     fwrite($file, $model);
     fwrite($file, "\n");
     fclose($file);
 
-    $file = fopen("resultsModel.txt", "a") or die ("can't open file");
+    $file = fopen("resultsColor.txt", "a") or die ("can't open file");
     $color = $_POST["car_color"];
     fwrite($file, $color);
     fwrite($file, "\n");
