@@ -6,32 +6,7 @@
       google.charts.setOnLoadCallback(drawChartModel);
       function drawChartModel() {
 
-        var data = google.visualization.arrayToDataTable([
-          ['Category', 'Hours per Day'],
-          ['Honda',  11],
-          ['Toyota', 2],
-          ['Nissan',  2],
-          ['Ford', 2],
-          ['Jeep',  7],
-          ['Buick', 1],
-          ['Chevrolet', 3],
-          ['Other', 3],
-          ['None', 1]
-        ]);
 
-        var options = {
-          title: 'Students car\'s models',
-            pieHole: 0.4,
-            slices: {
-                0: {color: 'Red'},
-                1: {color: 'Green'},
-                2: {color: 'Blue'},
-                3: {color: 'Black'},
-                4: {color: 'Grey'},
-                5: {color: 'White'},
-                6: {color: 'Brown'}
-            }
-        };
 
         var chartModel = new google.visualization.PieChart(document.getElementById('model'));
 
