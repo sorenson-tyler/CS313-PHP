@@ -30,28 +30,12 @@
             
             echo $_SESSION["firstname"];
             echo ", you drive a $color $model $type.";
-            
-            switch ($color)
-            {
-                case 'Red':
-                    $Red++;
-                case 'Blue':
-                    $Blue++;
-                case 'Green':
-                    $Green++;
-                case 'Black':
-                    $Black++;
-                case 'White':
-                    $White++;
-                case 'Grey':
-                    $Grey++;
-                case 'Other':
-                    $Other++;
-            }
-            
-            echo $Grey;
-            echo $Black;
         ?>
         </h3>
+        
+        <?php
+        include 'carColorGraph.html'
+            ?>
+        
     </body>
 </html>
