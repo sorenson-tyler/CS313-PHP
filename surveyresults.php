@@ -34,8 +34,8 @@
         </h3>
         
         <?php
-        include 'carColorGraph.html'
-            include 'carModelGraph.html'
+        include 'carColorGraph.html';
+            include 'carModelGraph.html';
             ?>
         
     </body>
