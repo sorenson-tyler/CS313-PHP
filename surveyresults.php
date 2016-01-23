@@ -35,6 +35,7 @@
         
         <?php
         include 'carColorGraph.html'
+            include 'carModelGraph.html'
             ?>
         
     </body>
