@@ -3,6 +3,14 @@
     $_SESSION["firstname"] = $_POST["first_name"];
     $_SESSION["lastname"] = $_POST["last_name"];
     include 'results.php';
+
+    $file = "results.txt"
+    $fin = fopen($file, 'a');
+    $color = $_POST["car_color"];
+    $model = $_POST["car_model"];
+    $type = $_POST["car_type"];
+    fwrite($fin, $type);
+    fclose($fin);
 ?>
 <!DOCTYPE html>
 <html>
@@ -23,19 +31,13 @@
             </nav>
         </div>
         <h3>Thank you for your response 
-        <?php
-            $color = $_POST["car_color"];
-            $model = $_POST["car_model"];
-            $type = $_POST["car_type"];
-            
-            echo $_SESSION["firstname"];
-            echo ", you drive a $color $model $type.";
-        ?>
-        </h3>
-        
-        <?php
-        include 'carColorGraph.html';
+            <?php
+                echo $_SESSION["firstname"];
+                echo ", you drive a $color $model $type.";
             ?>
-        
+        </h3>
+        <?php
+            include 'carColorGraph.html';
+        ?>
     </body>
 </html>
