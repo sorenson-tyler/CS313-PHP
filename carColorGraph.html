@@ -4,6 +4,7 @@
     <script type="text/javascript">
       google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawChart);
+        var truck = 1;
       function drawChart() {
 
         var data = google.visualization.arrayToDataTable([
@@ -62,7 +63,7 @@
           ['Category', 'Hours per Day'],
           ['Sedan',  11],
           ['Minivan', 2],
-          ['Truck',  find('Truck', 'resultsType.txt')],
+          ['Truck',  truck],
           ['SUV', 2],
           ['Sports car',  7]
         ]);
