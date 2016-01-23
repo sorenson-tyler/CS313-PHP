@@ -2,8 +2,6 @@
     session_start();
     $_SESSION["firstname"] = $_POST["first_name"];
     $_SESSION["lastname"] = $_POST["last_name"];
-    include 'results.php';
-
     $file = "results.txt"
     $fin = fopen($file, 'a');
     $color = $_POST["car_color"];
