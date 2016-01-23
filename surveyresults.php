@@ -8,10 +8,9 @@
         <?php
             $_SESSION["firstname"] = $_POST["first_name"];
             $_SESSION["lastname"] = $_POST["last_name"];
-            $value = $_POST["car_model"];
             include 'results.php';
-        echo $_SESSION["firstname"];
-        echo $value;
+            echo $_SESSION["firstname"];
+            echo $value;
         ?>
     </body>
 </html>
