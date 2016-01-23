@@ -2,11 +2,22 @@
     session_start();
     $_SESSION["firstname"] = $_POST["first_name"];
     $_SESSION["lastname"] = $_POST["last_name"];
-    $file = fopen("results.txt", "a") or die("can't open file");
-    $color = $_POST["car_color"];
-    $model = $_POST["car_model"];
+    $file = fopen("resultsType.txt", "a") or die("can't open file");
     $type = $_POST["car_type"];
     fwrite($file, $type);
+    fwrite($file, "\n");
+    fclose($file);
+    
+    $file = fopen("resultsColor.txt", "a") or die ("can't open file");
+    $model = $_POST["car_model"];
+    fwrite($file, $model);
+    fwrite($file, "\n");
+    fclose($file);
+
+    $file = fopen("resultsModel.txt", "a") or die ("can't open file");
+    $color = $_POST["car_color"];
+    fwrite($file, $color);
+    fwrite($file, "\n");
     fclose($file);
 ?>
 <!DOCTYPE html>
