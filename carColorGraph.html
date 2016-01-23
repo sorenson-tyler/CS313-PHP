@@ -62,7 +62,7 @@
           ['Category', 'Hours per Day'],
           ['Sedan',  11],
           ['Minivan', 2],
-          ['Truck',  find("Truck", "resultsType.txt")],
+          ['Truck',  find('Truck', 'resultsType.txt')],
           ['SUV', 2],
           ['Sports car',  7]
         ]);
@@ -89,24 +89,29 @@
         var chart3 = new google.visualization.PieChart(document.getElementById('piechartType'));
         chart3.draw(dataType, optionsType);
       }
-function find(var item, var file) {
-        var xhttp = new XMLHttpRequest();
-	    xhttp.onreadystatechange = function() {
-		  if (xhttp.readyState == 4 && xhttp.status == 200) {
-              var text = xhtttp.responseText;
-              if(text.indexOf(item) > -1) {
-                  var result = text.split(item);
-                  if (result.length > 1) {
-                    return result.length -1;
+        
+        function find(var item, var file) {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+              if (xhttp.readyState == 4 && xhttp.status == 200) {
+                  var text = xhtttp.responseText;
+                  if(text.indexOf(item) > -1) {
+                      var result = text.split(item);
+                      if (result.length > 1) {
+                        return result.length -1;
+                        }
+                      else {
+                          return 0;
+                        }
                 }
-                  else
+                  else {
                       return 0;
+                  }
             }
-		}
-  	};
-  	xhttp.open("GET", file, true);
-  	xhttp.send();
-}
+  	     };
+  	     xhttp.open("GET", file, true);
+  	     xhttp.send();
+        }
     </script>
   </head>
   <body>
