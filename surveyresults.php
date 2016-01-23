@@ -9,14 +9,11 @@
     <body>
         <h3>Thank you for your response 
         <?php
-            echo $_SESSION["firstname"];
-        ?> 
-            you drive a
-            <?php
-                echo $_POST["car_color"] + " ";
-                echo $_POST["car_model"] + " ";
-                echo $_POST["car_type"];
-            ?>
+            echo $_SESSION["firstname"] + " you drive a ";
+            echo $_POST["car_color"] + " ";
+            echo $_POST["car_model"] + " ";
+            echo $_POST["car_type"];
+        ?>
         </h3>
     </body>
 </html>
