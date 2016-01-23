@@ -57,17 +57,43 @@
                 6: {color: 'Brown'}
             }
         };
+          
+        var dataType = google.visualization.arrayToDataTable([
+          ['Category', 'Hours per Day'],
+          ['Sedan',  11],
+          ['Minivan', 2],
+          ['Truck',  2],
+          ['SUV', 2],
+          ['Sports car',  7]
+        ]);
+
+        var optionsType = {
+          title: 'Students car\'s models',
+            pieHole: 0.4,
+            slices: {
+                0: {color: 'Red'},
+                1: {color: 'Green'},
+                2: {color: 'Blue'},
+                3: {color: 'Black'},
+                4: {color: 'Grey'},
+                5: {color: 'Brown'}
+            }
+        };
 
         var chart = new google.visualization.PieChart(document.getElementById('piechartColor'));
         chart.draw(data, options);
           
         var chart2 = new google.visualization.PieChart(document.getElementById('piechartModel'));
         chart2.draw(dataModel, optionsModel);
+
+        var chart3 = new google.visualization.PieChart(document.getElementById('piechartType'));
+        chart3.draw(dataType, optionsType);
       }
     </script>
   </head>
   <body>
     <div id="piechartColor" style="width: 900px; height: 500px;"></div>
     <div id="piechartModel" style="width: 900px; height: 500px;"></div>
+    <div id="piechartType" style="width: 900px; height: 500px;"></div>
   </body>
 </html>
