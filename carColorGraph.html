@@ -64,7 +64,7 @@
           dataType.addColumn('number', 'years');
   dataType.addColumn('number', 'sales');
 
-          dataType.addRow(['Honda', 2]);
+          dataType.addRow([3, 2]);
         optionsType = {
           title: 'Students car\'s types',
             pieHole: 0.4,
@@ -87,7 +87,7 @@
         chart3 = new google.visualization.PieChart(document.getElementById('piechartType'));
         chart3.draw(dataType, optionsType);
           
-          console.log(dataType.getValue(1,1).toString());
+          console.log(dataType.getValue(0,1).toString());
       }
      function changeValue(chart, value) {
             console.log(dataType.getValue(0,1).toString());
