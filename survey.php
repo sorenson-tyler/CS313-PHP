@@ -1,15 +1,8 @@
 <?php
     session_start();
-    if($_SESSION["color"] != null && $_SESSION["model"] != null && $_SESSION["type"] != null)
+    if(isset($_SESSION["color"], $_SESSION["model"], $_SESSION["type"]))
     {
-        console.log($_SESSION);
         header("Loation: surveyresults.php");
-    }
-    else
-    {
-        $_SESSION["color"];
-        $_SESSION["model"];
-        $_SESSION["type"];
     }
     print_r($_SESSION);
 ?>
