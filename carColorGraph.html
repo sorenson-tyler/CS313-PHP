@@ -4,8 +4,7 @@
     <script type="text/javascript">
       google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawChart);
-        var truck = find("Truck", "resultsType.txt");
-        console.log(truck);
+      var truck = find("Truck", "resultsType.txt");
       function drawChart() {
 
         var data = google.visualization.arrayToDataTable([
@@ -100,14 +99,15 @@
                   if(text.indexOf(item) > -1) {
                       var result = text.split(item);
                       if (result.length > 1) {
-                        return result.length -1;
+                        var times = result.length -1;
+                          return times.toString;
                         }
                       else {
-                          return 0;
+                          return '0';
                         }
                 }
                   else {
-                      return 0;
+                      return '0';
                   }
             }
   	     };
