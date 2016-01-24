@@ -2,6 +2,10 @@
     session_start();
     $_SESSION["firstname"] = "None";
     $_SESSION["lastname"] = "None";
+    if($_SESSION["color"] != null && $_SESSION["model"] != null && $_SESSION["type"] != null)
+    {
+        header("Loation: surveyresults.php");
+    }
 ?>
 
 <!DOCTYPE html>
