@@ -26,6 +26,12 @@
         fwrite($file, "\n");
         fclose($file);
     }
+    else
+    {
+        $color = $_SESSION["color"];
+        $model = $_SESSION["model"];
+        $type = $_SESSION["type"];
+    }
 ?>
 <!DOCTYPE html>
 <html>
@@ -41,7 +47,21 @@
                   loadResults('resultsColor.txt', 'blue', 'Blue');
                   loadResults('resultsColor.txt', 'grey', 'Grey');
                   loadResults('resultsColor.txt', 'other', 'Other');
-                  loadResults('resultsColor.txt', 'red', 'Red');">
+                  loadResults('resultsColor.txt', 'red', 'Red');
+                  loadResults('resultsType.txt', 'truck', 'Truck');
+                  loadResults('resultsType.txt', 'suv', 'SUV');
+                  loadResults('resultsType.txt', 'minivan', 'Minivan');
+                  loadResults('resultsType.txt', 'sportscar', 'Sports car');
+                  loadResults('resultsType.txt', 'sedan', 'Sedan');
+                  loadResults('resultsModel.txt', 'honda', 'Honda');
+                  loadResults('resultsModel.txt', 'toyota', 'Toyota');
+                  loadResults('resultsModel.txt', 'nissan', 'Nissan');
+                  loadResults('resultsModel.txt', 'ford', 'Ford');
+                  loadResults('resultsModel.txt', 'jeep', 'Jeep');
+                  loadResults('resultsModel.txt', 'buick', 'Buick');
+                  loadResults('resultsModel.txt', 'chevrolet', 'Chevrolet');
+                  loadResults('resultsModel.txt', 'other', 'Other');
+                  loadResults('resultsModel.txt', 'none', 'None');">
         
         <div id="header">
             <h1 id="name">Tyler Sorenson</h1>
@@ -101,6 +121,73 @@
                 <td>Other</td>
                 <td class="" id="other"></td>
             </tr>
+        </table>
+        <table id="resultstabletype">
+            <tr>
+                <th>Car type</th>
+                <th>Student Votes</th>
+            </tr>
+            <tr class="">
+                <td>Sedan</td>
+                <td class="" id="sedan"></td>
+            </tr>
+            <tr class="">
+                <td>Truck</td>
+                <td class="" id="truck"></td>
+            </tr>
+            <tr class="">
+                <td>Minivan</td>
+                <td class="" id="minivan"></td>
+            </tr>
+            <tr class="">
+                <td>SUV</td>
+                <td class="" id="suv"></td>
+            </tr>
+            <tr class="">
+                <td>SportsCar</td>
+                <td class="" id="sportscar"></td>
+            </tr>
+            <table id="resultstablemodel">
+            <tr>
+                <th>Car Model</th>
+                <th>Student Votes</th>
+            </tr>
+            <tr class="">
+                <td>Honda</td>
+                <td class="" id="honda"></td>
+            </tr>
+            <tr class="">
+                <td>Ford</td>
+                <td class="" id="ford"></td>
+            </tr>
+            <tr class="">
+                <td>Buick</td>
+                <td class="" id="buick"></td>
+            </tr>
+            <tr class="">
+                <td>Nissan</td>
+                <td class="" id="nissan"></td>
+            </tr>
+            <tr class="">
+                <td>Jeep</td>
+                <td class="" id="jeep"></td>
+            </tr>
+            <tr class="">
+                <td>Chevrolet</td>
+                <td class="" id="chevrolet"></td>
+            </tr>
+            <tr class="">
+                <td>Other</td>
+                <td class="" id="other"></td>
+            <tr class="">
+                <td>None</td>
+                <td class="" id="none"></td>
+            </tr>
+            <tr class="">
+                <td>Toyota</td>
+                <td class="" id="toyota"></td>
+            </tr>
+        </table>
         </table>
     </body>
 </html>
