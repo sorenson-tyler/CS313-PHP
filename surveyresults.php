@@ -7,25 +7,25 @@
         $_SESSION["type"] = $_POST["car_type"];
         $_SESSION["color"] = $_POST["car_color"];
         $_SESSION["model"] = $_POST["car_model"];
+
+        $file = fopen("resultsType.txt", "a") or die("can't open file");
+        $type = $_SESSION["type"];
+        fwrite($file, $type);
+        fwrite($file, "\n");
+        fclose($file);
+
+        $file = fopen("resultsModel.txt", "a") or die ("can't open file");
+        $model = $_SESSION["model"];
+        fwrite($file, $model);
+        fwrite($file, "\n");
+        fclose($file);
+
+        $file = fopen("resultsColor.txt", "a") or die ("can't open file");
+        $color = $_SESSION["color"];
+        fwrite($file, $color);
+        fwrite($file, "\n");
+        fclose($file);
     }
-
-    $file = fopen("resultsType.txt", "a") or die("can't open file");
-    $type = $_SESSION["type"];
-    fwrite($file, $type);
-    fwrite($file, "\n");
-    fclose($file);
-    
-    $file = fopen("resultsModel.txt", "a") or die ("can't open file");
-    $model = $_SESSION["model"];
-    fwrite($file, $model);
-    fwrite($file, "\n");
-    fclose($file);
-
-    $file = fopen("resultsColor.txt", "a") or die ("can't open file");
-    $color = $_SESSION["color"];
-    fwrite($file, $color);
-    fwrite($file, "\n");
-    fclose($file);
 ?>
 <!DOCTYPE html>
 <html>
@@ -35,7 +35,14 @@
         <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
         <script type="text/javascript" src="survey.js"></script>
     </head>
-    <body onload="loadResults('resultsColor.txt', 'black', 'Black');">
+    <body onload="loadResults('resultsColor.txt', 'black', 'Black');
+                  loadResults('resultsColor.txt', 'white', 'White');
+                  loadResults('resultsColor.txt', 'green', 'Green');
+                  loadResults('resultsColor.txt', 'blue', 'Blue');
+                  loadResults('resultsColor.txt', 'grey', 'Grey');
+                  loadResults('resultsColor.txt', 'other', 'Other');
+                  loadResults('resultsColor.txt', 'red', 'Red');">
+        
         <div id="header">
             <h1 id="name">Tyler Sorenson</h1>
             <nav id="navigation">
@@ -72,27 +79,27 @@
             </tr>
             <tr class="">
                 <td>White</td>
-                <td class="" id=""></td>
+                <td class="" id="white"></td>
             </tr>
             <tr class="">
                 <td>Grey</td>
-                <td class="" id=""></td>
+                <td class="" id="grey"></td>
             </tr>
             <tr class="">
                 <td>Red</td>
-                <td class="" id=""></td>
+                <td class="" id="red"></td>
             </tr>
             <tr class="">
                 <td>Blue</td>
-                <td class="" id=""></td>
-            </tr>
-            <tr class="">
-                <td>White</td>
-                <td class="" id=""></td>
+                <td class="" id="blue"></td>
             </tr>
             <tr class="">
                 <td>Green</td>
-                <td class="" id=""></td>
+                <td class="" id="green"></td>
+            </tr>
+            <tr class="">
+                <td>Other</td>
+                <td class="" id="other"></td>
             </tr>
         </table>
     </body>
