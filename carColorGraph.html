@@ -100,16 +100,20 @@
                   console.log(xhttp.responseText);
                   console.log(text);
                   if(text.indexOf(item) > -1) {
+                      console.log(text);
                       var result = text.split(item);
                       if (result.length > 1) {
+                          console.log(text);
                         var times = result.length -1;
                           return times.toString;
                         }
                       else {
+                          console.log(text);
                           return "1";
                         }
                 }
                   else {
+                      console.log(text);
                       return "0";
                   }
             }
