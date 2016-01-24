@@ -49,7 +49,7 @@
             <?php
                 echo $_SESSION["firstname"];
                 echo ", you drive a ";
-                echo $color . $model . $type. ".";
+                echo "$color $model $type.";
             ?>
         </h3>
         <?php
