@@ -33,8 +33,9 @@
         <link rel="stylesheet" type="text/css" href="survey.css"/>
         <link rel="stylesheet" type="text/css" href="homepage.css"/>
         <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="survey.js"></script>
     </head>
-    <body>
+    <body onload="loadResults('resultsType.txt')">
         <div id="header">
             <h1 id="name">Tyler Sorenson</h1>
             <nav id="navigation">
@@ -45,15 +46,28 @@
                 </ul>
             </nav>
         </div>
-        <h3>Thank you for your response 
+        <h3> 
             <?php
-                echo $_SESSION["firstname"];
-                echo ", you drive a ";
-                echo "$color $model $type.";
+                if (isset($_SESSION["firstname"], $_SESSION["lastname"], $_SESSION["type"], $_SESSION["color"],$_SESSION["model"]))
+                {
+                    echo "Thank you for your response ";
+                    echo $_SESSION["firstname"];
+                    echo ", you drive a ";
+                    echo "$color $model $type.";
+                }
+                else
+                {
+                    echo "Here are the results";
+                }
             ?>
         </h3>
-        <?php
-            include 'carColorGraph.html';
-        ?>
+        <table id="resultstable">
+            <tr id="type">
+                <td id="first"></td>
+            </tr>
+        </table>
+        //<?php
+            //include 'carColorGraph.html';
+        //?>
     </body>
 </html>
