@@ -4,11 +4,11 @@
     <script type="text/javascript">
       google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawChart);
-        var dataType;
-        var chart3;
+      var dataType;
+      var chart3;
+        var optionsType;
       function drawChart() {
-
-        var data = google.visualization.arrayToDataTable([
+      var data = google.visualization.arrayToDataTable([
           ['Category', 'Hours per Day'],
           ['Red',  11],
           ['Green', 2],
@@ -69,7 +69,7 @@
           ['Sports car',  7]
         ]);
 
-        var optionsType = {
+        optionsType = {
           title: 'Students car\'s types',
             pieHole: 0.4,
             slices: {
@@ -94,7 +94,7 @@
           console.log(dataType.getValue(1,1).toString());
       }
      function changeValue(chart, value) {
-            console.log(dataType.getValue(0,1).toString());
+            console.log(chart3.dataType.getValue(0,1).toString());
     }
     changeValue("chart3", 1);
 
