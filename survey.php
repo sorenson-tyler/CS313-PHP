@@ -7,7 +7,7 @@
         console.log($_SESSION);
         header("Loation: surveyresults.php");
     }
-    console.log($_SESSION);
+    print_r($_SESSION);
 ?>
 
 <!DOCTYPE html>
