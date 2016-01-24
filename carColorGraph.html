@@ -4,6 +4,35 @@
     <script type="text/javascript">
       google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawChart);
+      function find(item, file) {
+          var xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+              if (xhttp.readyState == 4 && xhttp.status == 200) {
+                  var text = xhttp.responseText;
+                  console.log(xhttp.responseText);
+                  console.log(text);
+                  if(text.indexOf(item) > -1) {
+                      console.log(text);
+                      var result = text.split(item);
+                      if (result.length > 1) {
+                          console.log(result.length);
+                          var times = result.length;
+                          return times;
+                        }
+                      else {
+                          console.log(text);
+                          return "1";
+                        }
+                }
+                  else {
+                      console.log(text);
+                      return "0";
+                  }
+            }
+  	     };
+  	     xhttp.open("GET", file, true);
+  	     xhttp.send();
+        }
       var truck = find("Truck", "resultsType.txt");
       console.log(find("Truck", "resultsType.txt"));
       function drawChart() {
@@ -91,36 +120,7 @@
         var chart3 = new google.visualization.PieChart(document.getElementById('piechartType'));
         chart3.draw(dataType, optionsType);
       }
-        
-        function find(item, file) {
-            var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-              if (xhttp.readyState == 4 && xhttp.status == 200) {
-                  var text = xhttp.responseText;
-                  console.log(xhttp.responseText);
-                  console.log(text);
-                  if(text.indexOf(item) > -1) {
-                      console.log(text);
-                      var result = text.split(item);
-                      if (result.length > 1) {
-                          console.log(result.length);
-                          var times = result.length;
-                          return times;
-                        }
-                      else {
-                          console.log(text);
-                          return "1";
-                        }
-                }
-                  else {
-                      console.log(text);
-                      return "0";
-                  }
-            }
-  	     };
-  	     xhttp.open("GET", file, true);
-  	     xhttp.send();
-        }
+    
     </script>
   </head>
   <body>
