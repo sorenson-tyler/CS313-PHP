@@ -2,7 +2,7 @@
     session_start();
     if(isset($_SESSION["color"], $_SESSION["model"], $_SESSION["type"]))
     {
-        header("Location: http://php-tsorenson.rhcloud.com/surveyresults.php";
+        header("Location: http://php-tsorenson.rhcloud.com/surveyresults.php");
         exit;
     }
 
