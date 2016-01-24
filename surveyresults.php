@@ -1,10 +1,13 @@
 <?php
     session_start();
-    $_SESSION["firstname"] = $_POST["first_name"];
-    $_SESSION["lastname"] = $_POST["last_name"];
-    $_SESSION["type"] = $_POST["car_type"];
-    $_SESSION["color"] = $_POST["car_color"];
-    $_SESSION["model"] = $_POST["car_model"];
+    if(!isset($_SESSION["firstname"], $_SESSION["lastname"], $_SESSION["type"], $_SESSION["color"],$_SESSION["model"]))
+    {
+        $_SESSION["firstname"] = $_POST["first_name"];
+        $_SESSION["lastname"] = $_POST["last_name"];
+        $_SESSION["type"] = $_POST["car_type"];
+        $_SESSION["color"] = $_POST["car_color"];
+        $_SESSION["model"] = $_POST["car_model"];
+    }
 
     $file = fopen("resultsType.txt", "a") or die("can't open file");
     $type = $_POST["car_type"];
