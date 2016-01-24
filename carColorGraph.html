@@ -5,6 +5,7 @@
       google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawChart);
       var truck = find("Truck", "resultsType.txt");
+      console.log(find("Truck", "resultsType.txt"));
       function drawChart() {
 
         var data = google.visualization.arrayToDataTable([
