@@ -60,15 +60,11 @@
             }
         };
           
-        dataType = new google.visualization.arrayToDataTable([
-          ['Car Type', 'Number of Students'],
-          ['Sedan',  11],
-          ['Minivan', 2],
-          ['Truck',  2],
-          ['SUV', 2],
-          ['Sports car',  7]
-        ]);
+        dataType = new google.visualization.DataTable();
+          dataType.addColumn('number', 'years');
+  dataType.addColumn('number', 'sales');
 
+          dataType.addRow(['Honda', 2]);
         optionsType = {
           title: 'Students car\'s types',
             pieHole: 0.4,
