@@ -2,7 +2,8 @@
     session_start();
     if(isset($_SESSION["color"], $_SESSION["model"], $_SESSION["type"]))
     {
-        print_r($_SESSION);
+        header("Location: surveyresults.php";
+        exit;
     }
 
 ?>
