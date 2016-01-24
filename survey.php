@@ -4,8 +4,10 @@
     $_SESSION["lastname"] = "None";
     if($_SESSION["color"] != null && $_SESSION["model"] != null && $_SESSION["type"] != null)
     {
+        console.log($_SESSION);
         header("Loation: surveyresults.php");
     }
+    console.log($_SESSION);
 ?>
 
 <!DOCTYPE html>
