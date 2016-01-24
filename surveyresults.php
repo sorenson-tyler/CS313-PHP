@@ -48,7 +48,9 @@
         <h3>Thank you for your response 
             <?php
                 echo $_SESSION["firstname"];
-                echo ", you drive a $color $model $type.";
+                echo ", you drive a ";
+                echo $_SESSION["color"] $_SESSION["model"] $_SESSION["type"];
+                echo ".";
             ?>
         </h3>
         <?php
