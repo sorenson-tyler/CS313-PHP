@@ -2,7 +2,7 @@
     session_start();
     if(isset($_SESSION["color"], $_SESSION["model"], $_SESSION["type"]))
     {
-        header("Location: surveyresults.php";
+        header("Location: http://php-tsorenson.rhcloud.com/surveyresults.php";
         exit;
     }
 
@@ -12,7 +12,7 @@
 <html>
     <head>
         <meta charset="UTF-8"/>
-        <title>Tyler Sorenson's Homepage</title>
+        <title>Student Survey</title>
         <link rel="stylesheet" type="text/css" href="survey.css"/>
         <link rel="stylesheet" type="text/css" href="homepage.css"/>
         <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
