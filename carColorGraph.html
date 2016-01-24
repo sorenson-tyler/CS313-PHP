@@ -4,7 +4,8 @@
     <script type="text/javascript">
       google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawChart);
-        var truck = 1;
+        var truck = find("Truck", "resultsType.txt");
+        console.log(truck);
       function drawChart() {
 
         var data = google.visualization.arrayToDataTable([
