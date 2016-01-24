@@ -66,8 +66,5 @@
                 <td id="first"></td>
             </tr>
         </table>
-        //<?php
-            //include 'carColorGraph.html';
-        //?>
     </body>
 </html>
