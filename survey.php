@@ -1,11 +1,15 @@
 <?php
     session_start();
-    $_SESSION["firstname"] = "None";
-    $_SESSION["lastname"] = "None";
     if($_SESSION["color"] != null && $_SESSION["model"] != null && $_SESSION["type"] != null)
     {
         console.log($_SESSION);
         header("Loation: surveyresults.php");
+    }
+    else
+    {
+        $_SESSION["color"];
+        $_SESSION["model"];
+        $_SESSION["type"];
     }
     print_r($_SESSION);
 ?>
