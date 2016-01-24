@@ -5,13 +5,10 @@
       google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawChart);
       function find(item, file) {
-          var xhttp = new XMLHttpRequest();
-          xhttp.onreadystatechange = function() {
-              if (xhttp.readyState == 4 && xhttp.status == 200) {
-                  var text = xhttp.responseText;
-                  console.log(xhttp.responseText);
-                  console.log(text);
-                  if(text.indexOf(item) > -1) {
+          var fileIn = FileIO.open('/test.txt');
+          if (fileIn.exists()) {
+            var text = FileIO.read(fileIn);
+            if(text.indexOf(item) > -1) {
                       console.log(text);
                       var result = text.split(item);
                       if (result.length > 1) {
@@ -29,11 +26,38 @@
                       console.log(text);
                       return "0";
                   }
-            }
-  	     };
-  	     xhttp.open("GET", file, false);
-  	     xhttp.send();
-        }
+	       }
+      }
+
+//          var xhttp = new XMLHttpRequest();
+//          xhttp.onreadystatechange = function() {
+//              if (xhttp.readyState == 4 && xhttp.status == 200) {
+//                  var text = xhttp.responseText;
+//                  console.log(xhttp.responseText);
+//                  console.log(text);
+//                  if(text.indexOf(item) > -1) {
+//                      console.log(text);
+//                      var result = text.split(item);
+//                      if (result.length > 1) {
+//                          console.log(result.length);
+//                          var times = result.length;
+//                          console.log(times.toString());
+//                          return times.toString();
+//                        }
+//                      else {
+//                          console.log(text);
+//                          return "1";
+//                        }
+//                }
+//                  else {
+//                      console.log(text);
+//                      return "0";
+//                  }
+//            }
+//  	     };
+//  	     xhttp.open("GET", file, false);
+//  	     xhttp.send();
+//        }
       var truck = find("Truck", "resultsType.txt");
       console.log(truck);
       function drawChart() {
