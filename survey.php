@@ -31,7 +31,7 @@
         <div class="title">
             <h1 id="title">Student Survey</h1>
         </div>
-        <button id="results_button" href="surveyresults.php">Click to see Results</button>
+        <button id="results_button" href="http://php-tsorenson/surveyresults.php">Click to see Results</button>
         <form action="surveyresults.php" method="post">
             <div id="firstname">
                 First name: 
