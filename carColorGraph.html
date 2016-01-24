@@ -97,6 +97,8 @@
             xhttp.onreadystatechange = function() {
               if (xhttp.readyState == 4 && xhttp.status == 200) {
                   var text = xhttp.responseText;
+                  console.log(xhttp.responseText);
+                  console.log(text);
                   if(text.indexOf(item) > -1) {
                       var result = text.split(item);
                       if (result.length > 1) {
