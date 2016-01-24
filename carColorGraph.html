@@ -4,8 +4,7 @@
     <script type="text/javascript">
       google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawChart);
-      var truck = find("Truck", "resultsType.txt");
-      console.log(truck);
+      changeValue("chart3");
       function drawChart() {
 
         var data = google.visualization.arrayToDataTable([
@@ -91,8 +90,11 @@
         var chart3 = new google.visualization.PieChart(document.getElementById('piechartType'));
         chart3.draw(dataType, optionsType);
           
-          console.log(dataType.getValue(0,1).toString());
+          console.log(dataType.getValue(0,2).toString());
       }
+        function changeValue(chart, value) {
+            console.log(dataType.getValue(0,1).toString());
+        }
     
     </script>
   </head>
