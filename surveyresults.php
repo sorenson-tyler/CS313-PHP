@@ -10,19 +10,19 @@
     }
 
     $file = fopen("resultsType.txt", "a") or die("can't open file");
-    $type = $_POST["car_type"];
+    $type = $_SESSION["type"];
     fwrite($file, $type);
     fwrite($file, "\n");
     fclose($file);
     
     $file = fopen("resultsModel.txt", "a") or die ("can't open file");
-    $model = $_POST["car_model"];
+    $model = $_SESSION["model"];
     fwrite($file, $model);
     fwrite($file, "\n");
     fclose($file);
 
     $file = fopen("resultsColor.txt", "a") or die ("can't open file");
-    $color = $_POST["car_color"];
+    $color = $_SESSION["color"];
     fwrite($file, $color);
     fwrite($file, "\n");
     fclose($file);
@@ -49,8 +49,7 @@
             <?php
                 echo $_SESSION["firstname"];
                 echo ", you drive a ";
-                echo $_SESSION["color"] $_SESSION["model"] $_SESSION["type"];
-                echo ".";
+                echo " $_color $_model $_type .";
             ?>
         </h3>
         <?php
