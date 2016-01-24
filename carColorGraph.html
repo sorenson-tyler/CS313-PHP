@@ -4,7 +4,6 @@
     <script type="text/javascript">
       google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawChart);
-      changeValue("chart3", 1);
       function drawChart() {
 
         var data = google.visualization.arrayToDataTable([
@@ -92,9 +91,11 @@
           
           console.log(dataType.getValue(1,1).toString());
       }
-        function changeValue(chart, value) {
+     function changeValue(chart, value) {
             console.log(document.getElementById('piechartType').getValue(0,1).toString());
-        }
+    }
+    changeValue("chart3", 1);
+
     
     </script>
   </head>
