@@ -35,7 +35,7 @@
         <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
         <script type="text/javascript" src="survey.js"></script>
     </head>
-    <body onload="loadResults('resultsColor.txt', 'black', 'Black);">
+    <body onload="loadResults('resultsColor.txt', 'black', 'Black');">
         <div id="header">
             <h1 id="name">Tyler Sorenson</h1>
             <nav id="navigation">
