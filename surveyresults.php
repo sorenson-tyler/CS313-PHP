@@ -35,7 +35,7 @@
         <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
         <script type="text/javascript" src="survey.js"></script>
     </head>
-    <body onload="loadResults('resultsType.txt')">
+    <body onload="loadResults('resultsColor.txt', 'black', 'Black);">
         <div id="header">
             <h1 id="name">Tyler Sorenson</h1>
             <nav id="navigation">
@@ -61,9 +61,38 @@
                 }
             ?>
         </h3>
-        <table id="resultstable">
-            <tr id="type">
-                <td id="first"></td>
+        <table id="resultstablecolor">
+            <tr>
+                <th>Car color</th>
+                <th>Student Votes</th>
+            </tr>
+            <tr class="">
+                <td>Black</td>
+                <td class="" id="black"></td>
+            </tr>
+            <tr class="">
+                <td>White</td>
+                <td class="" id=""></td>
+            </tr>
+            <tr class="">
+                <td>Grey</td>
+                <td class="" id=""></td>
+            </tr>
+            <tr class="">
+                <td>Red</td>
+                <td class="" id=""></td>
+            </tr>
+            <tr class="">
+                <td>Blue</td>
+                <td class="" id=""></td>
+            </tr>
+            <tr class="">
+                <td>White</td>
+                <td class="" id=""></td>
+            </tr>
+            <tr class="">
+                <td>Green</td>
+                <td class="" id=""></td>
             </tr>
         </table>
     </body>
