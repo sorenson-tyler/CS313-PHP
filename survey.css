@@ -81,7 +81,7 @@ form {
 table {
     display: inline-block;
     vertical-align: top;
-    padding 50px;
+    padding: 50px;
 }
 
 table, td {
@@ -94,7 +94,7 @@ td {
 
 h3 {
     font-size: 30px;
-    margin-left: 30%;
+    margin-left: 28%;
 }
 
 #submit {
