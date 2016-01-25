@@ -76,7 +76,7 @@ form {
 
 #tables {
     padding: 30px;
-    margin-left: 500px;
+    margin-left: 30%;
 }
 
 table {
@@ -94,9 +94,5 @@ td {
 
 h3 {
     font-size: 30px;
-    margin-left: 30%;
-}
-
-h4 {
     margin-left: 30%;
 }

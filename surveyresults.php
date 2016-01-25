@@ -88,7 +88,6 @@
                 }
             ?>
         </h3>
-        <h4>Results</h4>
         <div id="tables">
             <table id="resultstablecolor">
                 <tr>
