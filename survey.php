@@ -72,7 +72,7 @@
                 <input type="radio" name="car_color" value="Grey">Grey<br>
                 <input type="radio" name="car_color" value="Other">Other<br>
             </div>
-            <input type="submit">
+            <input id="submit" type="submit">
         </form>
     </body>
 </html>
