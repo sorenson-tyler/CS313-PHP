@@ -81,6 +81,7 @@ form {
 
 table {
     display: inline-table;
+    padding 30px;
 }
 
 table, td {
@@ -93,5 +94,9 @@ td {
 
 h3 {
     font-size: 30px;
-    margin-left: 25%;
+    margin-left: 30%;
+}
+
+h4 {
+    margin-left: 30%;
 }
