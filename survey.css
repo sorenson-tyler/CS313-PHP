@@ -76,12 +76,12 @@ form {
 
 #tables {
     margin-left: 30%;
+    padding: 50px;
 }
 
 table {
     display: inline-block;
     vertical-align: top;
-    padding: 50px;
 }
 
 table, td {
