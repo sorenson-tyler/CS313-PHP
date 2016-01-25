@@ -88,106 +88,108 @@
                 }
             ?>
         </h3>
-        <table id="resultstablecolor">
-            <tr>
-                <th>Car color</th>
-                <th>Student Votes</th>
-            </tr>
-            <tr class="">
-                <td>Black</td>
-                <td class="" id="black"></td>
-            </tr>
-            <tr class="">
-                <td>White</td>
-                <td class="" id="white"></td>
-            </tr>
-            <tr class="">
-                <td>Grey</td>
-                <td class="" id="grey"></td>
-            </tr>
-            <tr class="">
-                <td>Red</td>
-                <td class="" id="red"></td>
-            </tr>
-            <tr class="">
-                <td>Blue</td>
-                <td class="" id="blue"></td>
-            </tr>
-            <tr class="">
-                <td>Green</td>
-                <td class="" id="green"></td>
-            </tr>
-            <tr class="">
-                <td>Other</td>
-                <td class="" id="other"></td>
-            </tr>
-        </table>
-        <table id="resultstabletype">
-            <tr>
-                <th>Car type</th>
-                <th>Student Votes</th>
-            </tr>
-            <tr class="">
-                <td>Sedan</td>
-                <td class="" id="sedan"></td>
-            </tr>
-            <tr class="">
-                <td>Truck</td>
-                <td class="" id="truck"></td>
-            </tr>
-            <tr class="">
-                <td>Minivan</td>
-                <td class="" id="minivan"></td>
-            </tr>
-            <tr class="">
-                <td>SUV</td>
-                <td class="" id="suv"></td>
-            </tr>
-            <tr class="">
-                <td>SportsCar</td>
-                <td class="" id="sportscar"></td>
-            </tr>
+        <div id="tables">
+            <table id="resultstablecolor">
+                <tr>
+                    <th>Car color</th>
+                    <th>Votes</th>
+                </tr>
+                <tr class="">
+                    <td>Black</td>
+                    <td class="" id="black">0</td>
+                </tr>
+                <tr class="">
+                    <td>White</td>
+                    <td class="" id="white">0</td>
+                </tr>
+                <tr class="">
+                    <td>Grey</td>
+                    <td class="" id="grey">0</td>
+                </tr>
+                <tr class="">
+                    <td>Red</td>
+                    <td class="" id="red">0</td>
+                </tr>
+                <tr class="">
+                    <td>Blue</td>
+                    <td class="" id="blue">0</td>
+                </tr>
+                <tr class="">
+                    <td>Green</td>
+                    <td class="" id="green">0</td>
+                </tr>
+                <tr class="">
+                    <td>Other</td>
+                    <td class="" id="other">0</td>
+                </tr>
+            </table>
+            <table id="resultstabletype">
+                <tr>
+                    <th>Car type</th>
+                    <th>Votes</th>
+                </tr>
+                <tr class="">
+                    <td>Sedan</td>
+                    <td class="" id="sedan">0</td>
+                </tr>
+                <tr class="">
+                    <td>Truck</td>
+                    <td class="" id="truck">0</td>
+                </tr>
+                <tr class="">
+                    <td>Minivan</td>
+                    <td class="" id="minivan">0</td>
+                </tr>
+                <tr class="">
+                    <td>SUV</td>
+                    <td class="" id="suv">0</td>
+                </tr>
+                <tr class="">
+                    <td>SportsCar</td>
+                    <td class="" id="sportscar">0</td>
+                </tr>
+            </table>
             <table id="resultstablemodel">
-            <tr>
-                <th>Car Model</th>
-                <th>Student Votes</th>
-            </tr>
-            <tr class="">
-                <td>Honda</td>
-                <td class="" id="honda"></td>
-            </tr>
-            <tr class="">
-                <td>Ford</td>
-                <td class="" id="ford"></td>
-            </tr>
-            <tr class="">
-                <td>Buick</td>
-                <td class="" id="buick"></td>
-            </tr>
-            <tr class="">
-                <td>Nissan</td>
-                <td class="" id="nissan"></td>
-            </tr>
-            <tr class="">
-                <td>Jeep</td>
-                <td class="" id="jeep"></td>
-            </tr>
-            <tr class="">
-                <td>Chevrolet</td>
-                <td class="" id="chevrolet"></td>
-            </tr>
-            <tr class="">
-                <td>Other</td>
-                <td class="" id="other"></td>
-            <tr class="">
-                <td>None</td>
-                <td class="" id="none"></td>
-            </tr>
-            <tr class="">
-                <td>Toyota</td>
-                <td class="" id="toyota"></td>
-            </tr>
-        </table>
-        </table>
+                <tr>
+                    <th>Car Model</th>
+                    <th>Votes</th>
+                </tr>
+                <tr class="">
+                    <td>Honda</td>
+                    <td class="" id="honda">0</td>
+                </tr>
+                <tr class="">
+                    <td>Ford</td>
+                    <td class="" id="ford">0</td>
+                </tr>
+                <tr class="">
+                    <td>Buick</td>
+                    <td class="" id="buick">0</td>
+                </tr>
+                <tr class="">
+                    <td>Nissan</td>
+                    <td class="" id="nissan">0</td>
+                </tr>
+                <tr class="">
+                    <td>Jeep</td>
+                    <td class="" id="jeep">0</td>
+                </tr>
+                <tr class="">
+                    <td>Chevrolet</td>
+                    <td class="" id="chevrolet">0</td>
+                </tr>
+                <tr class="">
+                    <td>Other</td>
+                    <td class="" id="other">0</td>
+                <tr class="">
+                    <td>None</td>
+                    <td class="" id="none">0</td>
+                </tr>
+                <tr class="">
+                    <td>Toyota</td>
+                    <td class="" id="toyota">0</td>
+                </tr>
+            </table>
+        </div>
     </body>
 </html>
