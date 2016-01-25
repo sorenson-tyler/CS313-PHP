@@ -76,7 +76,6 @@ form {
 
 #tables {
     margin-left: 30%;
-    padding: 50px;
 }
 
 table {
@@ -85,6 +84,7 @@ table {
 }
 
 table, td {
+    width: 100px;
     border: 1px solid black;
 }
 
