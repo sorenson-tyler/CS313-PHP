@@ -75,13 +75,13 @@ form {
 }
 
 #tables {
-    padding: 30px;
     margin-left: 30%;
 }
 
 table {
     display: inline-block;
-    padding 30px;
+    vertical-align: top;
+    padding 50px;
 }
 
 table, td {
