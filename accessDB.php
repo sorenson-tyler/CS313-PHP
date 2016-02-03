@@ -29,6 +29,6 @@
         
             $stmt = $db->prepare('SELECT * FROM table game_type where name = :name');
             $stmt->execute(array(':name' => $search));
-            echo $stmt;
+            echo $stmt->fetch();
         ?>
     </body>
