@@ -26,6 +26,7 @@
             }
         
             $search = $_POST["searchBox"];
+            echo $search;
         
             $stmt = $db->prepare('SELECT * FROM table game_type where name = :name');
             $stmt->execute(array(':name' => $search));
