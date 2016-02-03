@@ -7,7 +7,7 @@
         <form id = "gameSearch">
             Search for game:
             <input name = "searchBox" type=text width="20px">
-            <button id="searchButton" name="Search"/>
+            <button id="searchButton" name="Search"></button>
         </form>
         
         <?php
@@ -15,7 +15,7 @@
             {
                $user = 'php';
                $password = 'dstasl66'; 
-               $db = new PDO('mysql:host=127.0.0.1;port=8889;dbname=php', $user, $password);
+               $db = new PDO('mysql:host=127.0.0.1;port=3306;dbname=php', $user, $password);
                 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                 echo "Connected successfully"; 
             }
