@@ -24,5 +24,7 @@
                echo 'Error!: ' . $ex->getMessage();
                die(); 
             }
+            $stmt = $db->prepare('SELECT * FROM game_type');
+            echo $stmt;
         ?>
     </body>
