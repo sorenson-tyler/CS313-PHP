@@ -15,7 +15,7 @@
             {
                $user = 'php';
                $password = 'dstasl66'; 
-               $db = new PDO('mysql:host=localhost;port=3306;dbname=php', $user, $password);
+               $db = new PDO('mysql:host=127.6.94.2;port=3306;dbname=php', $user, $password);
                 $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                 echo "Connected successfully"; 
             }
