@@ -6,15 +6,15 @@
     <body>
         <form id = "gameSearch">
             Search for game:
-            <input id = "searchBox" type=text width="20px">
-            <submit id = "searchButton">Search</submit>
+            <input name = "searchBox" type=text width="20px">
+            <button id="searchButton"/>
         </form>
         <?php
             try
             {
                $user = 'php'
                $password = 'php-pass'; 
-               $db = new PDO('mysql:host=127.0.0.1;dbname=myTestDB', $user, $password);
+               $db = new PDO('mysql:host=127.0.0.1;dbname=php', $user, $password);
             }
             catch (PDOException $ex) 
             {
