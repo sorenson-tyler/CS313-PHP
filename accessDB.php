@@ -14,7 +14,7 @@
             {
                $user = 'php'
                $password = 'dstasl66'; 
-               $db = new PDO('mysql:host=127.0.0.1;dbname=localhost', $user, $password);
+               $db = new PDO('mysql:host=localhost;dbname=php', $user, $password);
             }
             catch (PDOException $ex) 
             {
