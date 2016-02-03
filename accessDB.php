@@ -4,10 +4,10 @@
         
     </head>
     <body>
-        <form id = "gameSearch">
+        <form id = "gameSearch" method="post" action="accessDB.php">
             Search for game:
             <input name = "searchBox" type=text width="20px">
-            <button id="searchButton" name="Search">Search</button>
+            <button id="searchButton" type="submit" name="Search">Search</button>
         </form>
         
         <?php
@@ -24,7 +24,11 @@
                echo 'Error!: ' . $ex->getMessage();
                die(); 
             }
-            $stmt = $db->prepare('SELECT * FROM table game_type');
+        
+            $search = $_POST["searchBox"];
+        
+            $stmt = $db->prepare('SELECT * FROM table game_type where name = :name');
+            $stmt->execute(array(':name' => $search));
             echo $stmt;
         ?>
     </body>
