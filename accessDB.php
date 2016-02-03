@@ -8,10 +8,11 @@
             Search for game:
             <input name = "searchBox" type=text width="20px">
             <button id="searchButton" type="submit" name="Search">Search</button>
+            <br><br>
         </form>
         
         <?php
-              try
+            try
             {
                $user = 'php';
                $password = 'dstasl66'; 
