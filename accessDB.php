@@ -4,6 +4,11 @@
         
     </head>
     <body>
+        <form id = "gameSearch">
+            Search for game:
+            <input id = "searchBox" type=text width="20px">
+            <submit id = "searchButton">Search</submit>
+        </form>
         <?php
             try
             {
@@ -11,10 +16,10 @@
                $password = 'php-pass'; 
                $db = new PDO('mysql:host=127.0.0.1;dbname=myTestDB', $user, $password);
             }
-                catch (PDOException $ex) 
-                {
-                   echo 'Error!: ' . $ex->getMessage();
-                   die(); 
-                }
+            catch (PDOException $ex) 
+            {
+               echo 'Error!: ' . $ex->getMessage();
+               die(); 
+            }
         ?>
     </body>
