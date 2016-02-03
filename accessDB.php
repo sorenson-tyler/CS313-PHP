@@ -12,9 +12,11 @@
         <?php
               try
             {
-               $user = 'php'
+               $user = 'php';
                $password = 'dstasl66'; 
                $db = new PDO('mysql:host=localhost;dbname=php', $user, $password);
+                $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+                echo "Connected successfully"; 
             }
             catch (PDOException $ex) 
             {
