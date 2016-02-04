@@ -32,7 +32,7 @@
             else
             {
         ?>
-            <form id = "gameSearch" method="post" action="">
+            <form id = "gameSearch" method="post" action="accessDB.php">
                 Search for game:
                 <input name = "searchBox" type=text width="20px">
                 <button id="searchButton" type="submit" name="Search">Search</button>
