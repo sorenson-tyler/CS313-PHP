@@ -4,7 +4,7 @@
         
     </head>
     <body>
-        <form id = "gameSearch" method="post" action="accessDB.php">
+        <form id = "gameSearch" method="post" action="">
             Search for game:
             <input name = "searchBox" type=text width="20px">
             <button id="searchButton" type="submit" name="Search">Search</button>
@@ -31,9 +31,10 @@
             $search = $_POST["searchBox"];
             echo $search;
         
-            $stmt = $db->prepare('SELECT * FROM table game_type where name = :name');
-            $stmt->execute(array(':name' => $search));
-            echo $stmt->fetch();
+            $stmt = $db->prepare("SELECT * FROM table game_type where name = '"$search"'");
+            $stmt->execute();
+            $result = $stmt->fetchAll();
+            echo $result;
         }
         else
         {
