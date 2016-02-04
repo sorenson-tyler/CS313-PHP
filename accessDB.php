@@ -3,14 +3,7 @@
     <head>
         
     </head>
-    <body>
-        <form id = "gameSearch" method="post" action="">
-            Search for game:
-            <input name = "searchBox" type=text width="20px">
-            <button id="searchButton" type="submit" name="Search">Search</button>
-            <br><br>
-        </form>
-        
+    <body>        
         <?php
             try
             {
@@ -26,19 +19,27 @@
                die(); 
             }
         
-        if(isset($_POST["searchBox"]))
-        {
-            $search = $_POST["searchBox"];
-            echo $search;
-        
-            $stmt = $db->prepare("SELECT * FROM table game_type where name = '"$search"'");
-            $stmt->execute();
-            $result = $stmt->fetchAll();
-            echo $result;
-        }
-        else
-        {
-            echo "Search results";
-        }
+            if(isset($_POST["searchBox"]))
+            {
+                $search = $_POST["searchBox"];
+                echo $search;
+
+                $stmt = $db->prepare("SELECT * FROM table game_type where name = '"$search"'");
+                $stmt->execute();
+                $result = $stmt->fetchAll();
+                echo $result;
+            }
+            else
+            {
+        ?>
+            <form id = "gameSearch" method="post" action="">
+                Search for game:
+                <input name = "searchBox" type=text width="20px">
+                <button id="searchButton" type="submit" name="Search">Search</button>
+                <br><br>
+            </form>
+        <?php
+                echo "Search results";
+            }
         ?>
     </body>
