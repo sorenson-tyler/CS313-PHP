@@ -13,7 +13,7 @@
        die(); 
     }
 
-    $stmt = $db->prepare("SELECT * FROM table game_type where name = '"$search"'");
+    $stmt = $db->prepare("SELECT * FROM table game_type where name = 'Monopoly'");
     $stmt->execute();
     $result = $stmt->fetchAll();
     print_r $result;
