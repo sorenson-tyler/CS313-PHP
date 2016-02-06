@@ -16,7 +16,9 @@
         echo 'Error!: ' . $ex->getMessage();
         die(); 
     }
-    //$stmt = $db->prepare('SELECT * FROM table game_type WHERE name=\'Monopoly\'');
-    //$stmt->execute();
-    //$rows = $stmt->fetchAll(PDO:FETCH_ASSOC);
+    $name = "Monopoly";
+    $stmt = $db->prepare('SELECT * FROM game_type WHERE name=:name');
+    $stmt->execute(array(':name' => $name));
+    $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    echo 'Name: ' . $row['name'] . 'Minnimum players: ' . $row['number_players_min']; 
 ?>
