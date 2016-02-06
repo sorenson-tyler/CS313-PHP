@@ -6,5 +6,16 @@
     $dbName = 'php';
     echo "host:$dbHost:$dbPort dbName:$dbName user:$dbUser password:$dbPassword<br />\n";
 
-    $db = new PDO("mysql:host=$dbHost:$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+    try
+    {
+        $db = new PDO("mysql:host=$dbHost:$dbPort;dbname=$dbName", $dbUser, $dbPassword);
+    }
+    catch (PDOException $ex)
+    {
+        echo 'Error!: ' . $ex->getMessage();
+        die(); 
+    }
+    $stmt = $db->prepare('SELECT * FROM table game_type WHERE name='Monopoly'');
+    $stmt->execute();
+    $rows = $stmt->fetchAll(PDO:FETCH_ASSOC);
 ?>
