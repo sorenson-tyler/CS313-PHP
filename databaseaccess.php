@@ -20,5 +20,5 @@
     $stmt = $db->prepare('SELECT * FROM game_type WHERE name=:name');
     $stmt->execute(array(':name' => $name));
     $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    echo 'Name: ' . $row['name'] . 'Minnimum players: ' . $row['number_players_min']; 
+    echo 'Name: ' . $rows['name'] . 'Minnimum players: ' . $rows['number_players_min']; 
 ?>
