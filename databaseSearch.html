@@ -14,7 +14,7 @@
             var str = $(this).serialize();
             $.ajax('databaseaccess.php', str, function(result){
                 alert(result); // the result variable will contain any text echoed by getResult.php
-            })
+            }
             return(false);
             });
         </script>
