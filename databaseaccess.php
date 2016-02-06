@@ -15,7 +15,7 @@
         echo 'Error!: ' . $ex->getMessage();
         die(); 
     }
-    $stmt = $db->prepare('SELECT * FROM table game_type WHERE name='Monopoly'');
+    $stmt = $db->prepare('SELECT * FROM table game_type WHERE name=\'Monopoly\'');
     $stmt->execute();
     $rows = $stmt->fetchAll(PDO:FETCH_ASSOC);
 ?>
