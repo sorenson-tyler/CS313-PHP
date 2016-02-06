@@ -2,7 +2,7 @@
     <?php
         require 'connectDB.php';
 
-        $name = $_REQUEST['name'];
+        $name = $_POST['name'];
         $stmt = $db->prepare('SELECT * FROM game_type WHERE name=:name');
         $stmt->execute(array(':name' => $name));
         $rows = $stmt->fetchAll();

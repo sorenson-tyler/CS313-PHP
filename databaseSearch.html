@@ -2,21 +2,11 @@
 <html>
     <head>
         <title>Search Database</title>
-        <script src="//code.jquery.com/jquery-1.9.1.min.js"></script>
     </head>
     <body>
-        <form method="post" action="javascript:void(0);" id="searchForm">
+        <form method="post" action="databaseaccess.php" id="searchForm">
             <input type="text" name="name" placeholder="Search a game by name">
             <input type="submit" name="submit" value="Search">
         </form>
-        <script type="text/javascript">
-            $("form").submit(function(){
-            var str = $(this).serialize();
-            $.ajax('databaseaccess.php', str, function(result){
-                alert(result); // the result variable will contain any text echoed by getResult.php
-            })
-            return(false);
-            });
-        </script>
     </body>
 </html>
