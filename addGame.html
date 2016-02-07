@@ -6,10 +6,13 @@
     <body>
         <h1>Add game types to database</h1>
         <form method="post" action="addDatabase.php" id="addForm">
-            <input type="text" name="name" placeholder="Game name">
+            Enter new game type:
+            <input type="text" name="name" placeholder="Game name"><br>
+            Number of Players:
             <input type="number" name="min_players" placeholder="Min nummber of players">
-            <input type="number" name="max_players" placeholder="Max number of players">
-            <input type="boolean" name="positive_scoring" placeholder="Is this game highest score wins">
+            <input type="number" name="max_players" placeholder="Max number of players"><br>
+            High score or low score wins:
+            <input type="checkbox" name="positive_scoring" placeholder="Is this game highest score wins"><br>
             <input type="submit" name="submit" value="Search">
         </form>
     </body>
