@@ -12,6 +12,6 @@
         }
         else
         {
-            echo 'Name: ' . $rows[0]['name'] . '\nMin players: ' . $rows[0]['number_players_min'] . '\nMax players: ' . $rows[0]['number_players_max'] . '\nHighest score wins: ' . $rows[0]['positive_scoring'];
+            echo nl2br ('Name: ' . $rows[0]['name'] . '\nMin players: ' . $rows[0]['number_players_min'] . '\nMax players: ' . $rows[0]['number_players_max'] . '\nHighest score wins: ' . $rows[0]['positive_scoring']);
         }
     ?>
