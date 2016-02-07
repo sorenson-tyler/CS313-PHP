@@ -1,6 +1,6 @@
 <!DOCTYPE html>
     <?php
-        require 'http://php-tsorenson.rhcloud.com/connectDB.php';
+        require 'connectDB.php';
 
         $name = $_POST['name'];
         $stmt = $db->prepare('SELECT * FROM game_type WHERE name=:name');
