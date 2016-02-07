@@ -1,0 +1,131 @@
+html {
+    font-family:'Open Sans Condensed', Helvetica, Arial, Sans-Serif;
+    margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#header {
+    min-width: 700px;
+    box-shadow: 0px 3px 5px #888888;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    position: fixed;
+    height: 60px;
+    background: white;
+    z-index: 1;
+}
+
+#name {
+	position: fixed;
+	margin-top: 0px;
+	margin-left: 15px;
+	display: inline;
+	padding: 0px;
+	top: 10px;
+}
+
+#navigation {
+	position: fixed;
+	right: 0px;
+	display: inline-table;
+	height: 20px;
+	width: 30%;
+    position: fixed;
+}
+
+a {
+	text-decoration: none;
+}
+
+#navigation ul {
+    display: table-row;
+}
+
+#navigation li {
+	font-size: 20px;
+	display: table-cell;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+
+#wedding {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	top: 60px;
+	display: inline-block;
+}
+
+#scrolling {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: auto;
+}
+
+#about {
+	outline: none;
+	height: 100px;
+	margin: 0px;
+	display: inline-block;
+	background: grey;
+	color: white;
+	padding: 30px;
+}
+
+#about h1 {
+	font-size: 40px;
+}
+
+#about p {
+	font-size: 20px;
+}
+
+#aboutTitle {
+	margin: 0;
+	padding: 0;
+}
+
+#aboutDetail {
+	margin: 0;
+	padding: 0;
+}
+
+#accomplishments {
+	margin-left: 20%;
+	margin-right: 20%;
+}
+
+#horizontalLinks {
+	display: inline-table;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+#accompTitles {
+	display: table-row;
+}
+
+#accompTitles li {
+	display: table-cell;
+	padding: 20px;
+	text-align: center;
+}
+
+#message {
+	padding: 100px;
+}
+
+#ES {
+	width: 60%;
+	height: auto;
+	margin-left: 15%;
+}
