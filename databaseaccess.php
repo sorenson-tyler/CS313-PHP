@@ -8,7 +8,7 @@
         $rows = $stmt->fetchAll();
         if ($rows == null)
         {
-            echo 'No game types by that name.'
+            echo 'No game types by that name.';
         }
         else
         {
