@@ -27,9 +27,9 @@
         ?>
         <h1 id="title">Start a new game</h1>
         <form method="post" action="" id="searchForm">
-            <input id="players" onkeyup="addPlayers('players');" type="number" name="players" min="<?= $rows[0]['number_players_min'] ?>" max="<?= $rows[0]['number_players_max'] ?>">
+            <input id="players" type="number" name="players" min="<?= $rows[0]['number_players_min'] ?>" max="<?= $rows[0]['number_players_max'] ?>">
             <div id="container"/>
-            <input type="submit" name="submit" value="Next">
+            <input type="submit" onclick="addPlayers('players')" name="submit" value="Next">
         </form>
     </body>
 </html>
