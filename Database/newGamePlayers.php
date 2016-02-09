@@ -26,10 +26,10 @@
             $rows = $stmt->fetchAll();
         ?>
         <h1 id="title">Start a new game</h1>
-        <form method="post" action="" id="searchForm">
+        <form method="post" action="addPlayers('players')" id="searchForm">
             <input id="players" type="number" name="players" min="<?= $rows[0]['number_players_min'] ?>" max="<?= $rows[0]['number_players_max'] ?>">
             <div id="container"/>
-            <input type="submit" onclick="addPlayers('players')" name="submit" value="Next">
+            <input type="submit" name="submit" value="Next">
         </form>
     </body>
 </html>
