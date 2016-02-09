@@ -18,7 +18,7 @@
             </nav>
         </div>
         <h1 id="title">Start a new game</h1>
-        <form method="post" action="" id="searchForm">
+        <form method="post" action="newGamePlayers.php" id="searchForm">
             <select name="game_type">
                 <?php 
                     require 'connectDB.php';
@@ -28,13 +28,11 @@
                     $length = count($rows);
                     if ($length == 0)
                         echo "Error: No game types found!";
-                ?>
-                <?php foreach($rows as &$game): ?>
+                    foreach($rows as &$game): ?>
                 <option value="<?= $game['name'] ?>"><?= $game['name'] ?></option>
                 <?php endforeach; ?>
             </select>
-            <input type="text" name="name" placeholder="Search a game by name">
-            <input type="submit" name="submit" value="Search">
+            <input type="submit" name="submit" value="Next">
         </form>
     </body>
 </html>
