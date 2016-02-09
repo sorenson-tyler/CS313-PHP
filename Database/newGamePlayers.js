@@ -8,7 +8,7 @@ function addPlayers(id) {
         while (container.hasChildNodes()) {
             container.removeChild(container.lastChild);
         }
-        for (i = 0;i < players;i++) {
+        for (i = 1;i <= players;i++) {
             var input = document.createElement("input");
             input.type = "Text";
             input.name = "player" + i;

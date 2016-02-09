@@ -27,8 +27,8 @@
             {
                 $player[$i] = $_POST['player'+$i];
             }
-            foreach ($player as &$name)
-                echo $name;
+            //foreach ($player as &$name)
+                echo $player[1];
         ?>
         </h1>
     </body>
