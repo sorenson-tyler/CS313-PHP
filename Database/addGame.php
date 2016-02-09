@@ -18,6 +18,7 @@
                 </ul>
             </nav>
         </div>
+        <h1>
         <?php 
             require 'connectDB.php';
             $num_players = $_POST['num_players'];
@@ -29,5 +30,6 @@
             foreach ($player as &$name)
                 echo $name;
         ?>
+        </h1>
     </body>
 </html>
