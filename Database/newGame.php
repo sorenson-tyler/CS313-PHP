@@ -29,7 +29,7 @@
                     if ($length == 0)
                         echo "Error: No game types found!";
                 ?>
-                <?php foreach($rows as &$game): ?>
+                <?php foreach($rows as &$game => $name): ?>
                 <option value="<?= $game ?>"><?= $game ?></option>
                 <?php endforeach; ?>
             </select>
