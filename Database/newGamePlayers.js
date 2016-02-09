@@ -1,9 +1,10 @@
 function addPlayers(id) {
-    var players = document.getElementById(id).innerHTML;
+    var players = document.getElementById(id).valueOf();
     alert(players);
     var container = document.getElementById("container");
-    if (players == null)
+    if (players == null) {
         return;
+    }
     else {
         while (container.hasChildNodes()) {
             container.removeChild(container.lastChild);
