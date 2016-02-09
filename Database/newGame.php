@@ -29,8 +29,8 @@
                     if ($length == 0)
                         echo "Error: No game types found!";
                 ?>
-                <?php foreach($rows as &$game => $name): ?>
-                <option value="<?= $game ?>"><?= $game ?></option>
+                <?php foreach($rows as &$game): ?>
+                <option value="<?= $game['name'] ?>"><?= $game['name'] ?></option>
                 <?php endforeach; ?>
             </select>
             <input type="text" name="name" placeholder="Search a game by name">
