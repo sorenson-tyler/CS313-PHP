@@ -1,6 +1,5 @@
 function addPlayers(id) {
-    var players = document.getElementById(id).innerHTML;
-    alert(players);
+    var players = document.getElementById(id).value;
     var container = document.getElementById("container");
     if (players == null) {
         return;
