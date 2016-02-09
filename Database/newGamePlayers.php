@@ -26,7 +26,7 @@
             $rows = $stmt->fetchAll();
         ?>
         <h1 id="title">Start a new game</h1>
-        <form method="post" action="" id="searchForm">
+        <form method="post" action="addGame.php" id="searchForm">
             <input id="players" type="number" name="num_players" placeholder="Number of Players" min="<?= $rows[0]['number_players_min'] ?>" max="<?= $rows[0]['number_players_max'] ?>" onkeyup="addPlayers('players')">
             <div id="container"></div>
             <input type="submit" name="submit" value="Next">
