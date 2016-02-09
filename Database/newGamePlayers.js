@@ -12,6 +12,7 @@ function addPlayers(id) {
             var input = document.createElement("input");
             input.type = "Text";
             input.name = "player" + i;
+            input.placeholder = "Player " + i + "/'s name";
             container.appendChild(input);
             container.appendChild(document.createElement("br"));
         }
