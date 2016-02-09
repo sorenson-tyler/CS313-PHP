@@ -31,6 +31,7 @@
                 ?>
                 <?php foreach($rows as &$game): ?>
                 <option value="<?= $game ?>"><?= $game ?></option>
+                <?php endforeach; ?>
             </select>
             <input type="text" name="name" placeholder="Search a game by name">
             <input type="submit" name="submit" value="Search">
