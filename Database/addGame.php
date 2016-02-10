@@ -18,16 +18,18 @@
                 </ul>
             </nav>
         </div>
-        <h1>
+        <h1 style="padding=50px">
         <?php 
             require 'connectDB.php';
             $num_players = $_POST['num_players'];
             for ($i = 1;$i <= $num_players; $i++)
             {
-                $player[$i] = $_POST['player1'];
+                $player[$i] = $_POST["player$i"];
             }
             //foreach ($player as &$name)
-            echo $num_players . ' players in this game. Player 1: ' . $player[1];
+            echo $num_players . ' players in this game. Player 1: ' . $player[1] . "\n";
+            foreach($player as &$name)
+                echo $name;
         ?>
         </h1>
     </body>
