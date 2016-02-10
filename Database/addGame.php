@@ -26,10 +26,12 @@
             {
                 $player[$i] = $_POST["player$i"];
             }
-            //foreach ($player as &$name)
-            echo $num_players . ' players in this game. Player 1: ' . $player[1] . "\n";
+            $num = 1;
             foreach($player as &$name)
-                echo $name;
+            {
+                echo 'Player ' . $num . ': ' . $name . "\n";
+                $num++;
+            }
         ?>
         </h1>
     </body>
