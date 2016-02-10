@@ -18,7 +18,7 @@
                 </ul>
             </nav>
         </div>
-        <h1 style="padding=50px">
+        <h1 style="padding:50px">
         <?php 
             require 'connectDB.php';
             $num_players = $_POST['num_players'];
