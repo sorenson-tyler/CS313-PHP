@@ -22,13 +22,12 @@
         <?php 
             require 'connectDB.php';
             $num_players = $_POST['num_players'];
-            $player[$num_players]; 
             for ($i = 1;$i <= $num_players; $i++)
             {
-                $player[$i] = $_POST['player&$i'];
+                $player[$i] = $_POST['player1'];
             }
             //foreach ($player as &$name)
-                echo $player[1];
+            echo $num_players . ' players in this game. Player 1: ' . $player[1];
         ?>
         </h1>
     </body>
