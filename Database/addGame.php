@@ -25,7 +25,7 @@
             $player[$num_players]; 
             for ($i = 1;$i <= $num_players; $i++)
             {
-                $player[$i] = $_POST['player'+$i];
+                $player[$i] = $_POST['player&$i'];
             }
             //foreach ($player as &$name)
                 echo $player[1];
