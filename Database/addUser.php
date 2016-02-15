@@ -7,7 +7,7 @@
     {
         $stmt = $db->prepare('SELECT name FROM user WHERE name=:name)');
         $stmt->execute(array(':name' => $user_name));
-        $rows = $stmt>fetchAll();
+        $rows = $stmt->fetchAll();
         if ($rows == null)
         {
             $stmt = $db->prepare('INSERT INTO user (name, password) VALUES (:name, :password)');
