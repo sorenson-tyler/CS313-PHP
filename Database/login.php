@@ -6,7 +6,7 @@
     
     if ($username != null)
     {
-        $stmt = $db->prepare('SELECT password FROM users WHERE name=:name');
+        $stmt = $db->prepare('SELECT password FROM user WHERE name=:name');
         $stmt->execute(array(':name' => $username));
         $rows = $stmt->fetchAll();
         if($rows == null)
