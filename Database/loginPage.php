@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Search Database</title>
+        <?php
+            session_start();
+            if(isset($_SESSION["user"]))
+            {
+                header("Location: http://php-tsorenson.rhcloud.com/Database/actions.html");
+                exit;
+            }
+        ?>
+        <title>Login</title>
         <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="http://php-tsorenson.rhcloud.com/homepage.css"/>
         <link rel="stylesheet" type="text/css" href="db.css"/>
@@ -17,11 +25,13 @@
                 </ul>
             </nav>
         </div>
-        <a id="results_button" href="surveyresults.php">Click to see Results</a>
-        <h1 id="title">Search game types in database</h1>
-        <form method="post" action="databaseaccess.php" id="searchForm">
-            <input type="text" name="name" placeholder="Search a game by name">
-            <input type="submit" name="submit" value="Search">
+        <h1 id="title">Login</h1>
+        <form method="post" action="login.php" id="addForm">
+            <input type="text" name="name" placeholder="User Name"><br>
+            <input type="password" name="password" placeholder="Password"><br>
+            <input type="submit" name="submit" value="Login">
         </form>
+        <h1 id="newLogin">New User</h1>
+        <a href="addUser.html">Click here to add a new user</a>
     </body>
 </html>

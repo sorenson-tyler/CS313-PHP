@@ -2,7 +2,7 @@
     session_start();
     if(isset($_SESSION["user"]))
     {
-        header("Location: http://php-tsorenson.rhcloud.com");
+        header("Location: http://php-tsorenson.rhcloud.com/Database/actions.html");
         exit;
     }
     require 'connectDB.php';
