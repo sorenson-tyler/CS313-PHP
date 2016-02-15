@@ -1,4 +1,6 @@
 <?php
+    require 'connectDB.php';
+
     $game_name = $_POST['name'];
     $game_min_players = $_POST['min_players'];
     $game_max_players = $_POST['max_players'];
