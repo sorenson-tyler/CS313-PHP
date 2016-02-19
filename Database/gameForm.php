@@ -31,7 +31,7 @@
             <table>
                 <tr>
                     <td>Player 1</td>
-                    <td><input name="points" type="number" placeholder="Score"></td><br><br>
+                    <td><input name="points" type="number" placeholder="Score"></td>
                 </tr>
             </table>
             <input type="submit" name="nextButton" value="Next Round">
