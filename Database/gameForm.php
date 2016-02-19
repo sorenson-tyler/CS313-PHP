@@ -6,7 +6,7 @@
         exit;
     }
 ?>
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
     <head>
         <title>Current Game</title>
