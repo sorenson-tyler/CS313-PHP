@@ -10,6 +10,7 @@
 <html>
     <head>
         <title>Current Game</title>
+        <meta charset="UTF-8">
         <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="http://php-tsorenson.rhcloud.com/homepage.css"/>
         <link rel="stylesheet" type="text/css" href="db.css"/>
