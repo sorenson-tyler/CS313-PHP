@@ -18,6 +18,7 @@
                 <tr>
                     <td>Player 1</td>
                     <td><input name="name" type="number" placeholder="Score"></td>
+                    <input type="submit" text="Next Round">
                 </tr>
             </table>
         </form>
