@@ -14,7 +14,7 @@
     if ($button_clicked == "Next Round")
     {
         //Current Points and Total Points Querey
-        $stmt = $db->prepare('UPDATE user SET score_total += current_score, current_score = current_score + :points WHERE name = :name');
+        $stmt = $db->prepare('UPDATE user SET score_total = score_total + current_score, current_score = current_score + :points WHERE name = :name');
         $stmt->execute(array(':points' => $points, ':name' => $username));
         //Redirect back to the game
         header("Location: http://php-tsorenson.rhcloud.com/Database/gameForm.php");
