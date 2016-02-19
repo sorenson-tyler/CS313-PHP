@@ -16,6 +16,16 @@
         <link rel="stylesheet" type="text/css" href="db.css"/>
     </head>
     <body>
+        <div id="header">
+            <h1 id="name">Tyler Sorenson</h1>
+            <nav id="navigation">
+                <ul>
+                    <li><a href="http://php-tsorenson.rhcloud.com/projects.html">Projects</a></li>
+                    <li><a href="https://www.byui.edu">BYU - Idaho</a></li>
+                    <li><a href="http://php-tsorenson.rhcloud.com/index.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
         <h1>Play Game</h1>
         <form action="playGame.php" method="post">
             <table>
