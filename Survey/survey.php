@@ -22,9 +22,9 @@
             <h1 id="name">Tyler Sorenson</h1>
             <nav id="navigation">
                 <ul>
-                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="http://php-tsorenson.rhcloud.com/projects.html">Projects</a></li>
                     <li><a href="https://www.byui.edu">BYU - Idaho</a></li>
-                    <li><a href="index.html">About</a></li>
+                    <li><a href="http://php-tsorenson.rhcloud.com/index.html">About</a></li>
                 </ul>
             </nav>
         </div>
