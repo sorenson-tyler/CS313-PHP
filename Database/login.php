@@ -23,6 +23,8 @@
         {
             $_SESSION["user"] = $username;
             echo "Welcome $username";
+            header("Location: http://php-tsorenson.rhcloud.com/Database/actions.html");
+            exit;
         }
     }
     else
