@@ -26,7 +26,7 @@
                 </ul>
             </nav>
         </div>
-        <h1>Play Game</h1>
+        <h1 id="title">Play Game</h1>
         <form action="playGame.php" method="post">
             <table>
                 <tr>
