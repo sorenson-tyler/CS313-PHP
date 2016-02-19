@@ -1,6 +1,6 @@
 <?php
     session_start;
-    if(isset($_SESSION['name']))
+    if(!isset($_SESSION['name']))
     {
         header("Location: http://php-tsorenson.rhcloud.com/Database/login.php");
         exit;
