@@ -26,7 +26,7 @@
         $stmt = $db->prepare('UPDATE user SET score_total = score_total + current_score, current_score = 0, games_played = games_played + 1 WHERE name = :username');
         $stmt->execute(array(':username' => $username));
         //Redirect back to the actions page
-        header("Location: http://php-tsorenson.rhcloud.com/Database/actions.html");
+        header("Location: http://php-tsorenson.rhcloud.com/Database/actions.php");
         exit;
     }
 ?>
