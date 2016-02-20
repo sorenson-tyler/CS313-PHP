@@ -5,6 +5,9 @@
         header("Location: http://php-tsorenson.rhcloud.com/Database/login.php");
         exit;
     }
+    
+    require 'connectDB.php';
+    $users = $db->query("SELECT * FROM user");
 ?>
 <!DOCTYPE html>
 <html>
@@ -30,10 +33,16 @@
         <h1 id="title">Play Game</h1>
         <form action="playGame.php" method="post">
             <table>
-                <tr>
-                    <td>Player 1</td>
-                    <td><input name="points" type="number" placeholder="Score"></td>
-                </tr>
+                <?php
+                    foreach ($users as $user) {
+                        echo <<<HTML
+                        <tr>
+                            <td>{$user['name']}</td>
+                            <td><input name="points[]" type="number" placeholder="Score"></td>
+                        </tr>
+                        HTML;
+                    }
+                ?>
             </table>
             <input type="submit" name="nextButton" value="Next Round">
             <input type="submit" name="nextButton" value="End Game">
