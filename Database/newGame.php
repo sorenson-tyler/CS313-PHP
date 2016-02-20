@@ -17,6 +17,7 @@
                 </ul>
             </nav>
         </div>
+        <a id="results_button" href="actions.php">Click to return to actions</a>
         <h1 id="title">Start a new game</h1>
         <form method="post" action="newGamePlayers.php" id="searchForm">
             <select name="game_type">

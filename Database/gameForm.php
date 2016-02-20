@@ -26,6 +26,7 @@
                 </ul>
             </nav>
         </div>
+        <a id="results_button" href="actions.php">Click to return to actions</a>
         <h1 id="title">Play Game</h1>
         <form action="playGame.php" method="post">
             <table>

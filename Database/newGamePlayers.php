@@ -18,6 +18,7 @@
                 </ul>
             </nav>
         </div>
+        <a id="results_button" href="actions.php">Click to return to actions</a>
         <?php 
             require 'connectDB.php';
             $game = $_POST['game_type'];

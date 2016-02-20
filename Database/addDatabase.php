@@ -1,3 +1,6 @@
+<?php
+    require 'assertLogin.php';
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -17,7 +20,7 @@
                 </ul>
             </nav>
         </div>
-        <a id="results_button" href="actions.html">Click to return to actions</a>
+        <a id="results_button" href="actions.php">Click to return to actions</a>
         <h1 id="title">Results</h1>
         <?php
             require 'connectDB.php';

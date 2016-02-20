@@ -18,6 +18,7 @@
                 </ul>
             </nav>
         </div>
+        <a id="results_button" href="actions.php">Click to return to actions</a>
         <h1 style="padding:50px">
         <?php 
             require 'connectDB.php';
