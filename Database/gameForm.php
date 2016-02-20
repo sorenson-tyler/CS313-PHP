@@ -40,7 +40,8 @@
                             <td>{$user['name']}</td>
                             <td><input name="points[]" type="number" placeholder="Score"></td>
                         </tr>
-                        HTML;
+HTML;
+                        
                     }
                 ?>
             </table>
