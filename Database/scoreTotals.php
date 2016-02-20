@@ -5,11 +5,15 @@
         header("Location: http://php-tsorenson.rhcloud.com/Database/login.php");
         exit;
     }
+    
+    require 'connectDB.php';
+    $users = $db->query("SELECT * FROM user");
 ?>
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Modify Database</title>
+        <title>Current Game</title>
+        <meta charset="UTF-8">
         <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css" href="http://php-tsorenson.rhcloud.com/homepage.css"/>
         <link rel="stylesheet" type="text/css" href="db.css"/>
@@ -25,14 +29,20 @@
                 </ul>
             </nav>
         </div>
-        <h1 id="title">User Actions</h1>
-        <ul>
-            <li><a href="gameForm.php">Play a new game</a></li>
-            <li><a href="scoreTotals.php">View players score totals</a></li>
-            <li><a href="addGame.html">Add a new game type</a></li>
-            <li><a href="addUser.html">Add new users to the Database</a></li>
-            <li><a href="databaseSearch.html">Search for available game types</a></li>
-            <li><a href="logout.php">Log out</a></li>
-        </ul>
+        <a id="results_button" href="actions.php">Click to return to actions</a>
+        <h1 id="title">Score Totals</h1>
+        <table>
+                <?php
+                    foreach ($users as $user) {
+                        echo <<<HTML
+                        <tr>
+                            <td>{$user['name']}</td>
+                            <td>{$user['total_score']}</td>
+                        </tr>
+HTML;
+                        
+                    }
+                ?>
+        </table>
     </body>
 </html>
