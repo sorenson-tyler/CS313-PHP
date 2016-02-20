@@ -14,11 +14,12 @@
     $i = 0;
     foreach ($users as $user)
     {
-        $username[$i++] = $user;
+        $username[$i++] = $user['name'];
     }
     
     if ($button_clicked == "Next Round")
     {
+        $i = 0;
         foreach ($_POST['points'] as $points)
         {
             //Current Points and Total Points Query
@@ -32,9 +33,12 @@
     }
     else if ($button_clicked == "End Game")
     {
-        //End Game Query
-        $stmt = $db->prepare('UPDATE user SET score_total = score_total + current_score, current_score = 0, games_played = games_played + 1 WHERE name = :username');
-        $stmt->execute(array(':username' => $username));
+        foreach ($users as $username)
+        {
+            //End Game Query
+            $stmt = $db->prepare('UPDATE user SET score_total = score_total + current_score, current_score = 0, games_played = games_played + 1 WHERE name = :username');
+            $stmt->execute(array(':username' => $username['name']));
+        }
         //Redirect back to the actions page
         header("Location: http://php-tsorenson.rhcloud.com/Database/actions.php");
         exit;
