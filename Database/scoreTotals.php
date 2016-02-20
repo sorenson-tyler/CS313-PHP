@@ -37,7 +37,7 @@
                         echo <<<HTML
                         <tr>
                             <td>{$user['name']}</td>
-                            <td>{$user['total_score']}</td>
+                            <td>{$user['score_total']}</td>
                         </tr>
 HTML;
                         
